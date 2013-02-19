@@ -1,9 +1,7 @@
 /*
- *	mini slider 1.0 - jQuery image/content slider
+ *	mini slider 1.0 - free jQuery image/content slider plugin
  *	
  *	by Eugene Hranik
- *	
- *	December 2012
  *	
  *	requires jQuery library - http://jquery.com
  *
