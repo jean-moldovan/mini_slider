@@ -53,7 +53,7 @@
 		// shows arrows
 		if(options.arrows) {
 
-			obj.prepend('<a class="prev" href="">previous</a>');
+			obj.prepend('<a class="prev" href="">prev</a>');
 			obj.prepend('<a class="next" href="">next</a>');
 
 			var	prev = $('.prev', obj),
@@ -62,55 +62,41 @@
 			
 			// sets arrows position
 			arrow_height = prev.innerHeight();
-			prev.css('margin-top',-arrow_height/2);
-			next.css('margin-top',-arrow_height/2);
+			prev.css('margin-top', -arrow_height/2);
+			next.css('margin-top', -arrow_height/2);
 			
 			// "previous" button handler
 			prev.click(function(e) {
-				
 				e.preventDefault();
 				
 				if (obj.switcher) {
-										
 					obj.switcher = false;
-					
 					i--;
 					
 					changeSlide(obj, $ul, $li, width, speed, i, length);
 					
 					if (i < 0) {
-						
 						$li.first = true;
-						
 						i = length - 1;	
-					
 					}
-									
 				}
 				
 			});
 			
 			// "next" button handler	
 			next.click(function (e) {
-				
 				e.preventDefault();
 				
 				if (obj.switcher) {
-					
 					obj.switcher = false;
-					
 					i++;
 
 					changeSlide(obj, $ul, $li, width, speed, i, length);
 					
 					if (i > length - 1) {
-						
 						$li.last = true;
-						
 						i = 0;	
-					
 					}
-					
 				}				
 			
 			});
@@ -121,17 +107,13 @@
 		if(options.auto) {
 			
 			function rotate() {
-			
 				i++;
 
 				changeSlide(obj, $ul, $li, width, speed, i, length);
 				
 				if (i > length - 1) {
-					
 					$li.last = true;
-					
 					i = 0;	
-				
 				}
 			
 			};					
