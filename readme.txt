@@ -1,4 +1,4 @@
-Mini slider 1.0 - free jQuery image/content slider plugin
+Mini slider 1.0 - free jQuery image/content slider plugin (Deprecated)
 
 Requires jQuery library - http://jquery.com
 
